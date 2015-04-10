@@ -1,0 +1,11 @@
+import java.Scanner.*;
+public class testReverseString{
+ public static void main(String[] args){
+ Scanner input =new Scanner(System.in) 
+  String str;
+  input str =new input(nextLine);//如"how are you"
+  rev=str.reverse();
+  System.out.println("the reverse language is"+rev);
+ 
+  }
+   }
