@@ -1,0 +1,25 @@
+ #include<stdio.h>
+  #include<stdlib.h>
+ void main(){
+   int a[10];
+  int maxAdd(int x[]);
+  max=maxAdd(a);
+ printf("%d",max);
+  }
+  int maxAdd(int x[]){  
+   int i,j,temp;
+ for(i=1;i<=10;i++){
+   x[i-1]=(rand()%10);//0-10之间的随机数； 
+  for(j=1;j<10;j++){
+  if(!x[i-1]{ 
+    if(x[i-1]>x[j]{
+   temp=x[i-1];
+   x[i-1]=x[j];
+   x[j]=temp;
+   }else{}
+  }
+   }
+     }
+      }
+   return  (x[i-1]+x[i]);
+}
