@@ -1,0 +1,42 @@
+import java.awt.Frame;
+import java.awt.Label;
+import java.awt.Panel;
+import java.awt.TextField;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Awt {
+	public static void main(String[] args) {
+		Frame frame = new Frame("加法运算");
+		Panel panel1 = new Panel();
+		Panel panel2 = new Panel();
+		Panel panel3 = new Panel();
+		Label label = new Label("请数入第一个数:");
+     	label.setAlignment(label.CENTER);
+		label.setBounds(20, 10, 10, 10);
+		panel1.setBounds(50, 50, 60, 60);
+		
+		
+		TextField text1 = new TextField();
+		TextField text2 = new TextField(20);
+		TextField text3 = new TextField(10);
+		text1.setBounds(70,70, 50, 50);
+		text1.setVisible(true);
+		panel1.add(text1);
+		frame.add(panel1);
+		panel2.add(text2);
+		frame.add(panel2);
+		panel3.add(text3);
+		frame.add(panel3);
+		frame.addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent e) {
+				// TODO Auto-generated method stub
+				super.windowClosing(e);
+				System.exit(1);
+			}
+		});
+		frame.setBounds(100, 100, 300, 300);
+		frame.setVisible(true);
+	}
+}
